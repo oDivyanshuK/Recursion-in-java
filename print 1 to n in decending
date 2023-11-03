@@ -1,0 +1,21 @@
+import java.util.*;
+public class Recursion3 {
+
+/// print 1 to n in decending order
+    public static void printN(int n){
+        if(n == 0){    // this is base class
+            return;
+        }
+
+        System.out.println(n);
+        printN( n - 1);
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        printN(n);
+
+
+    }
+
+}
