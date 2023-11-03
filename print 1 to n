@@ -1,0 +1,21 @@
+import javax.xml.transform.stream.StreamSource;
+import java.sql.SQLOutput;
+import java.util.*;
+public class Recursion5 {
+
+///print 1 to n Number in accending order
+    public static void printN(int n){
+        if(n == 0){   /// this is base case
+            return;
+        }
+            printN(n-1);    //constructor
+            System.out.println(n);
+        
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in); // this is scanner Class
+        int n = scan.nextInt();  // this is variable n to take input in n
+        printN(n);
+
+    }
+}
