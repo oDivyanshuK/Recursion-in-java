@@ -1,0 +1,25 @@
+import org.w3c.dom.ls.LSOutput;
+import java.util.*;  // this is predefined class
+public class Recursion4 {
+
+    //Integer Digits Counting
+
+    public static int digitN(int n){
+        if(n == 0){
+            return 0;
+        }
+
+        int countD = digitN(n/10);
+        return countD+1;
+
+
+    }
+
+    public static void main(String [] args){
+    Scanner scan = new Scanner(System.in);  //this is scanner object
+        int n = scan.nextInt();  // this is integer type variable
+        System.out.println(digitN(n));
+
+
+    }
+}
