@@ -1,0 +1,34 @@
+//Write a recursive function to find the fibonacci of a given positive integer.
+
+public class practiceRecursion {
+
+    public static int fib(int n){
+
+        if(n == 0 || n == 1 ){
+            return n;
+        }
+//this is another way to write this
+//        else if(n == 1){
+//            return 1;
+//        }
+
+        return fib(n-1) + fib(n-2);
+//        return result;
+
+
+
+    }
+
+
+    public static void main(String [] args){
+
+        int n = 6; // this is number to find factorial
+        System.out.println(fib(n));
+
+
+    }
+
+
+
+
+}
