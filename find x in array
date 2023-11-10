@@ -1,0 +1,42 @@
+//Write a program to find x
+
+public class practiceRecursion {
+
+    public static int findX(int arr[], int x,int start ){
+        if(start == arr.length){
+            return -1;
+        }
+
+        else if(arr[start] == x){
+            return start;   //this will return index of array
+        }
+
+        return findX(arr,x,start+1);
+
+
+
+
+
+    }
+
+
+    public static void main(String [] args){
+
+        int arr[] = {1,5,12,19};
+        int x = 12;
+        int result = findX(arr,x,0);
+        //here is zero to initialize start index from 0
+        System.out.println(result);
+
+
+
+
+
+
+
+    }
+
+
+
+
+}
